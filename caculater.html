@@ -1,0 +1,119 @@
+
+<!DOCSTRING html>
+<html>
+<head>
+<script language="javascript" type="text/javascript">
+function disp(val)
+{
+document.getElementById("res").value+=val;
+}
+function sol()
+{
+var x=document.getElementById("res").value;
+var y=eval(x);
+document.getElementById("res").value=y;
+}
+function clr()
+{
+document.getElementById("res").value=""
+}
+</script>
+
+
+<style>
+	body{
+		font-family:sans-serif;
+		margin:0;
+		padding:0;
+		background:linear-gradient(to right,rgb(223, 75, 127),#5D5AE7);
+	}
+	.search{
+		font-size:1.9rem;
+	}
+input[type="text"]
+{
+
+width:100%;
+height:100%;
+font-weight:bold;
+}
+input[type="button"]
+{
+background-color:black;
+opacity:1px;
+font-weight:bold;
+width:85%;
+height:1%;
+font-size:2rem;
+color: white;
+}
+input[type="button"]:hover{
+	color:gold;
+	cursor:pointer;
+}
+table{
+max-width:50%;
+			max-height:50%;
+border-color:gold;
+border-radius:15px;
+
+position: fixed;
+left:250px;
+top:3%;
+margin: 203px;
+background-color:black;
+overflow: scroll;
+
+
+
+}
+h1{
+	text-transform: uppercase;
+	text-align:center;
+	margin-top:70px;
+    font-weight:700px;
+}
+
+</style>
+
+</head>
+<body bgcolor="white" >
+	<h1>
+		calculater 
+	</h1>
+
+
+	<center><table border="20"  >
+<tr>
+<td colspan="3"><input type="text" class="search" id="res"/ ></center></td>
+<td><center><input type="button" value="AC"  style=" text-transform:uppercase;" onclick="clr()"></center></td>
+</tr>
+<tr>
+<td><center><input type="button" value="1" onclick="disp('1')"/></center></td>
+<td><center><input type="button" value="2" onclick="disp('2')"/></center></td>
+<td><center><input type="button" value="3" onclick="disp('3')"/></center></td>
+<td><center><input type="button" value="/" onclick="disp('/')"/></center></td>
+</tr>
+<tr>
+<td><center><input type="button" value="4" onclick="disp('4')"/></center></td>
+<td><center><input type="button" value="5" onclick="disp('5')"/></center></td>
+<td><center><input type="button" value="6" onclick="disp('6')"/></center></td>
+<td><center><input type="button" value="-" onclick="disp('-')"/></center></td>
+</tr>
+<tr>
+<td><center><input type="button" value="7" onclick="disp('7')"/></center></td>
+<td><center><input type="button" value="8" onclick="disp('8')"/></center></td>
+<td><center><input type="button" value="9" onclick="disp('9')"/></center></td>
+<td><center><input type="button" value="+" onclick="disp('+')"/></center></td>
+</tr>
+<td><center><input type="button" value="." onclick="disp('.')"/></center></td>
+<td><center><input type="button" value="0" onclick="disp('0')"/></center></td>
+<td><center><input type="button" value="=" onclick="sol()"/></center></td>
+<td><center><input type="button" value="*" onclick="disp('*')"/></center></td>
+</tr>
+</table>
+</center>
+
+
+</body>
+</html>
